@@ -1,0 +1,59 @@
+PROPS :  are components passed with variables that can be changed
+using {props.'var name'} something iside the component 
+then changing it in the App.js while rendering 'var name' = ''
+
+USESTATES : render components without reloading the page, 
+creted a onClick function to render the default value of text 
+then used onChange method to handle the events of user changing something in the web page and then updating the text through useStates
+
+everything till creating the pallets was done using the above two
+also while creating pallets learned to link own style sheet
+    link the css file in the head of index.html present in public
+sent useState variables from app.js to diffrent components 
+loding the pallet inside the Navbar
+
+passed a paremeterised function in button to change the color of body
+for passsing it we need to run a call back function while button is pressed
+
+onClick     - click
+onChange    - for input fields (variable = e.target.value)
+onCopy      - when someone copies from text
+onSubmit    - by default reloads the page and submits the form even when user presses enter inside a form or clicks the submit button so no need to give onClick to submit button
+             to prevent default reloading use e.preventDefault()
+
+came back after exams 
+getting started imported the modes in about and then just changed the mode from here
+
+trying to host the app from github pages
+so basically app in two phases :
+    devlopment:
+        we use npm to run on llocal server and devlop app
+        we run a devlopment server on npm
+    production:
+        run command 'npm run build' (creats a static build of the app)
+        a build folder gets created whis=ch is a production version of the app
+        (the react extension of browser gets blue)
+        open the app on live server by going to the build folder in new window of vs code and starting live server
+
+
+### github Pages ###
+1. now github pages has problems running the react router
+    so we remove all routing from our project
+        remove route component
+        convert 'LINK TO' to 'A HREF' respectively in navbar
+
+2. just anove name  at the top paste in package.json
+      "homepage": "https://Ashhar909.github.io/myapp", (change myapp to name of the repositery)
+
+3. install gh pages
+    npm install --save gh-pages
+
+4. add these two lines to scripts
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+
+5. run this command 
+    npm run deploy
+    get the link on github pages settings of the particular repositery
+    
+

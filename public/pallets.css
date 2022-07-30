@@ -1,0 +1,52 @@
+.theme{
+    float: right;
+    padding: 5px;
+}
+
+.pallet button{
+    margin: 1px 1px 1px 1px;
+    border-radius: 5px;
+    background-color: black;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    color: antiquewhite;   
+    border: none;
+}
+
+.pallet{
+    text-align: right;
+    vertical-align: middle;
+}
+
+.pallet .dark-red button{
+    background-color: #9a0000;   
+}
+.pallet .dark-green button{
+    background-color: #044735;   
+}
+.pallet .dark-blue button{
+    background-color: #15317E;   
+}
+.pallet .dark-yellow button{
+    background-color: #7D6115;   
+}
+.pallet .dark-purple button{
+    background-color: #4B0150;   
+}
+
+.pallet .light-red button{
+    background-color: #F75D59;   
+}
+.pallet .light-green button{
+    background-color: #E2F516;   
+}
+.pallet .light-brown button{
+    background-color: #C7A317;   
+}
+.pallet .light-blue button{
+    background-color: #20B2AA;   
+}
+.pallet .light-white button{
+    background-color: Thistle;   
+}
