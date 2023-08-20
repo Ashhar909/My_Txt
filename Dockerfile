@@ -6,7 +6,7 @@ COPY package-lock.json .
 COPY . .
 
 RUN apt-get update && \
-    apt-get install -y nodejs && \
+    apt-get install -y nodejs npm && \
     npm install
 
 EXPOSE 3002
